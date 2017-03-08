@@ -13,3 +13,10 @@
 	border-radius: 20px;
 	/*cursor: pointer;*/
 }
+
+#diceValues {
+	background-color: grey;
+	color: white;
+	width: 200px;
+	height: 200px;
+}

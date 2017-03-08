@@ -1,4 +1,4 @@
- document.getElementById('rollButton').onclick = roll;
+document.getElementById('rollButton').onclick = roll;
 
 function roll () {
 var dieRollOne = Math.floor(Math.random() * 6 + 1);
