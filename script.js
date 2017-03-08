@@ -1,4 +1,5 @@
 document.getElementById('rollButton').onclick = roll;
+var globalPoint = 0;
 
 function roll () {
 var dieRollOne = Math.floor(Math.random() * 6 + 1);
@@ -12,10 +13,10 @@ var dieRollTwo = Math.floor(Math.random() * 6 + 1);
 document.getElementById('diceNumTwo').innerHTML = "Die 2: " + dieRollTwo;
 console.log("Die two rolled a " + dieRollTwo);
 
-var dieRoleTotal = dieRollOne + dieRollTwo;
-// document.write("Your combined roll is: " + dieRoleTotal);
-document.getElementById('diceTotal').innerHTML = "Total: " + dieRoleTotal;
-console.log("Your combined roll is: " + dieRoleTotal);
+var dieRollTotal = dieRollOne + dieRollTwo;
+// document.write("Your combined roll is: " + dieRollTotal);
+document.getElementById('diceTotal').innerHTML = "Total: " + dieRollTotal;
+console.log("Your combined roll is: " + dieRollTotal);
 
 
 
@@ -23,20 +24,20 @@ console.log("Your combined roll is: " + dieRoleTotal);
 // document.getElementById('rollButton').onclick = playerTurn
 
 
-var playerTurn = Function (dieRoleTotal); { 
-  if(dieRoleTotal === 7 || dieRoleTotal === 11) {
+var playerTurn = function (dieRollTotal); { 
+  if(dieRollTotal === 7 || dieRollTotal === 11) {
     // document.write("PASS: Next player's turn");
     document.getElementById('rollMessage').innerHTML = "PASS: Next player's turn";
     console.log("PASS: Next player's turn");
   }
-  else if(dieRoleTotal === 2 || dieRoleTotal === 3 || dieRoleTotal === 12) {
+  else if(dieRollTotal === 2 || dieRollTotal === 3 || dieRollTotal === 12) {
     // document.write("CRAP: Your'e shit out of luck!");
     document.getElementById('rollMessage').innerHTML = "CRAP: Your'e shit out of luck!";
     console.log("CRAP: Your'e shit out of luck!");
   }
  
-  else if(dieRoleTotal === 4 || dieRoleTotal === 5 || dieRoleTotal === 6 || dieRoleTotal === 8 || dieRoleTotal === 9 || dieRoleTotal === 10){
-    var point = dieRoleTotal;
+  else if(dieRollTotal === 4 || dieRollTotal === 5 || dieRollTotal === 6 || dieRollTotal === 8 || dieRollTotal === 9 || dieRollTotal === 10){
+    var point = dieRollTotal;
     // document.write("Point is " + point);
     document.getElementById('pointValue').innerHTML = "Point is " + point;
     console.log("Point is " + point);
@@ -44,4 +45,15 @@ var playerTurn = Function (dieRoleTotal); {
 
 }
 }
+
+  // function globalPointDisplay (){
+  //   if (dieRollTotal === point) {
+  //     point = globalPoint;
+  //     console.log(globalPoint);
+  //   }
+
+  //   else () {
+  //     globalPoint = 0;
+  //   }
+  // }
 
