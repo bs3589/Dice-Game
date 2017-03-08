@@ -1,3 +1,5 @@
+alert("hello");
+
 var dieRollOne = Math.floor(Math.random() * 6 + 1);
 document.write("Die one rolled a " + dieRollOne);
 console.log("Die one rolled a " + dieRollOne);
@@ -11,7 +13,7 @@ document.write("Your combined roll is: " + dieRoleTotal);
 console.log("Your combined roll is: " + dieRoleTotal);
 
 // button
-document.getElementById("rollButton").onclick = playerTurn;
+document.getElementById('rollButton').onclick = playerTurn;
 
 var playerTurn = Function (dieRoleTotal); {
   if(dieRoleTotal === 7 || dieRoleTotal === 11) {
