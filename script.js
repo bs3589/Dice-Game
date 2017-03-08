@@ -1,6 +1,6 @@
+ document.getElementById('rollButton').onclick = roll;
 
-
-
+function roll () {
 var dieRollOne = Math.floor(Math.random() * 6 + 1);
 document.write("Die one rolled a " + dieRollOne);
 console.log("Die one rolled a " + dieRollOne);
@@ -13,12 +13,10 @@ var dieRoleTotal = dieRollOne + dieRollTwo;
 document.write("Your combined roll is: " + dieRoleTotal);
 console.log("Your combined roll is: " + dieRoleTotal);
 
+
+
 // button
-// document.getElementById('rollButton').onclick = playerTurn;
-
-// document.getElementById('roll-dice').onclick = diceRoll;
-
- document.getElementById('rollButton').onclick = playerTurn
+// document.getElementById('rollButton').onclick = playerTurn
 
 
 var playerTurn = Function (dieRoleTotal); { 
@@ -38,5 +36,5 @@ var playerTurn = Function (dieRoleTotal); {
   }
 
 }
-
+}
 
