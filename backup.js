@@ -1,27 +1,27 @@
-document.getElementById('rollButton').onclick = roll;
+document.getElementById('rollButton').onclick = diceRollLogic;
 var globalPoint = 0;
 
-function roll () {
+
+// controls logic for both dice and sums the total
+
+// die one
+function diceRollLogic () {
 var dieRollOne = Math.floor(Math.random() * 6 + 1);
-// document.write("Die one rolled a " + dieRollOne);
 document.getElementById('diceNumOne').innerHTML = "Die 1: " + dieRollOne;
 console.log("Die one rolled a " + dieRollOne);
 
-
+// die two
 var dieRollTwo = Math.floor(Math.random() * 6 + 1);
-// document.write("Die two rolled a " + dieRollTwo);
 document.getElementById('diceNumTwo').innerHTML = "Die 2: " + dieRollTwo;
 console.log("Die two rolled a " + dieRollTwo);
 
+// total = sum of die one and two
 var dieRollTotal = dieRollOne + dieRollTwo;
-// document.write("Your combined roll is: " + dieRollTotal);
 document.getElementById('diceTotal').innerHTML = "Total: " + dieRollTotal;
 console.log("Your combined roll is: " + dieRollTotal);
 
 
 
-// button
-// document.getElementById('rollButton').onclick = playerTurn
 
 
 var playerTurn = Function (dieRollTotal); { 
