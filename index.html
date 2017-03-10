@@ -1,28 +1,3 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-	<title>Dice Game</title>
-	<link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="main.css">
-</head>
-<body>
-
-<h1>Dice Game</h1>
-<p>Clickity Clickity Clack</p>
-<div id="diceValues">
-	<div id="diceNumOne">Die 1: </div>
-	<div id="diceNumTwo">Die 2: </div>
-	<div id="diceTotal">Total: </div>
-	<div id="pointValue">Point: </div>
-	<div id="rollMessage"></div>
-</div> -->
-<!-- <button id="rollButton">Roll</button>
-<input id="rollButton" type="button" value="ROLL" onclick="playerTurn">
-
-<script src="script.js"></script>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,38 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="main.css">
+    <title>Dice Game</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="../../dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+
+    <!-- local css -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- <script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+
   <body>
-    <h1>Dice Game</h1>
-    <p>Clickity Clickity Clack</p>
-    
-<div id="diceValues">
-	<div id="diceNumOne">Die 1: </div>
-	<div id="diceNumTwo">Die 2: </div>
-	<div id="diceTotal">Total: </div>
-	<div id="pointValue">Point: </div>
-	<div id="rollMessage"></div>
-</div>
-<input id="rollButton" type="button" value="ROLL" onclick="playerTurn">
-<!-- <button id="rollButton">Roll</button>
-<input id="rollButton" type="button" value="ROLL" onclick="playerTurn">
 
-<script src="script.js"></script>
+    <div class="site-wrapper">
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <!-- <h3 class="masthead-brand">Cover</h3> -->
+              <!-- <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav> -->
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading">Dice Game</h1>
+          
+
+          <div id="diceContainer">
+            <div id="dice1Img" class="diceImgs"></div>
+            <div id="dice2Img" class="diceImgs"></div>
+
+          </div>
+
+
+          <!-- <div id="displayBoard"> -->
+              <div id="dice1">Die 1: </div>
+              <div id="dice2">Die 2: </div>
+              <div id="total">Total: </div>
+              <!-- <div id="pointValue">Point: </div> -->
+              <!-- <div id="rollNumber"> </div> -->
+              <div id="rollMessage"></div>
+          <!-- </div> -->
+
+
+            <button id="rollButton">Roll</button>
+
+            <button id="resetButton">Reset</button>
+           
+
+            <p class="lead">
+              <a href="#" id="instructions" class="btn btn-lg btn-default">Instructions</a>
+              
+            </p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Created by Blake Smith, find me on <a href="https://www.facebook.com/profile.php?id=706347194">facebook</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <!-- <script src="../../dist/js/bootstrap.min.js"></script> -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+
+    <!-- local js -->
+    <script src="script.js"></script>
+
   </body>
 </html>

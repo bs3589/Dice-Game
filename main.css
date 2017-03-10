@@ -14,9 +14,66 @@
 	/*cursor: pointer;*/
 }
 
-#diceValues {
-	background-color: grey;
+#resetButton {
+	background-color: silver;
 	color: white;
-	width: 500px;
-	height: 200px;
+	font-family: calibri;
+	display: block;
+	width: 140px;
+	font-size: 24px;
+	text-transform: uppercase;
+	padding: 10px;
+	text-align: center;
+	margin:	20px auto;
+	border-radius: 20px;
 }
+
+#displayBoard {
+	
+	color: white;
+	
+}
+
+#instructions {
+	border-radius: 30px;
+	
+}
+
+#diceContainer {
+	width: 360px;
+	height: 160px;
+	/*background-color: blue;*/
+	margin: 0 auto;
+}
+
+.diceImgs {
+	background-image: url("imgs/dice0.jpg");
+	width: 138px;
+	height: 138px;
+	display: inline-block;
+	margin:	20px 20px;
+	background-repeat: no-repeat;
+  	background-position: top left;
+  	border-radius: 20px;
+
+}
+
+
+/*.dice-1 {
+  background-image: url('../img/dice1.jpg');
+}
+.dice-2 {
+  background-image: url('../img/dice2.jpg');
+}
+.dice-3 {
+  background-image: url('../img/dice3.jpg');
+}
+.dice-4 {
+  background-image: url('../img/dice4.jpg');
+}
+.dice-5 {
+  background-image: url('../img/dice5.jpg');
+}
+.dice-6 {
+  background-image: url('../img/dice6.jpg');
+}*/
