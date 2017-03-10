@@ -1,7 +1,7 @@
 
 #rollButton {
-	background-color: lightgreen;
-	color: grey;
+	background-color: rgb(80, 163, 71);
+	color: silver;
 	font-family: calibri;
 	display: block;
 	width: 140px;
@@ -15,8 +15,8 @@
 }
 
 #resetButton {
-	background-color: silver;
-	color: white;
+	background-color: rgb(188, 44, 22);
+	color: silver;
 	font-family: calibri;
 	display: block;
 	width: 140px;
@@ -28,15 +28,24 @@
 	border-radius: 20px;
 }
 
-#displayBoard {
-	
-	color: white;
-	
+.displayBoard {
+
+}
+
+#rollMessage {
+	font-size: 20px;
 }
 
 #instructions {
 	border-radius: 30px;
+	background-color: silver;
+	border: 2px solid white;
+	color: grey;
 	
+}
+
+.lead {
+	margin: 50px;
 }
 
 #diceContainer {
@@ -59,21 +68,6 @@
 }
 
 
-/*.dice-1 {
-  background-image: url('../img/dice1.jpg');
+.cover-heading {
+	font-family: "Arial Black", Gadget, sans-serif;
 }
-.dice-2 {
-  background-image: url('../img/dice2.jpg');
-}
-.dice-3 {
-  background-image: url('../img/dice3.jpg');
-}
-.dice-4 {
-  background-image: url('../img/dice4.jpg');
-}
-.dice-5 {
-  background-image: url('../img/dice5.jpg');
-}
-.dice-6 {
-  background-image: url('../img/dice6.jpg');
-}*/
