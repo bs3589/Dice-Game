@@ -1,7 +1,7 @@
 
 #rollButton {
 	background-color: rgb(80, 163, 71);
-	color: silver;
+	color: white;
 	font-family: calibri;
 	display: block;
 	width: 140px;
@@ -11,12 +11,13 @@
 	text-align: center;
 	margin:	20px auto;
 	border-radius: 20px;
+	text-shadow: 2px 2px grey;
 	/*cursor: pointer;*/
 }
 
 #resetButton {
 	background-color: rgb(188, 44, 22);
-	color: silver;
+	color: white;
 	font-family: calibri;
 	display: block;
 	width: 140px;
@@ -26,22 +27,29 @@
 	text-align: center;
 	margin:	20px auto;
 	border-radius: 20px;
+	text-shadow: 2px 2px grey;
 }
 
 .displayBoard {
-
+	font-size: 20px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	color: silver;
 }
 
 #rollMessage {
-	font-size: 20px;
+	font-size: 30px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	color: gold;
 }
 
 #instructions {
 	border-radius: 30px;
 	background-color: silver;
 	border: 2px solid white;
-	color: grey;
-	
+	color: white;
+	text-shadow: 2px 2px grey;
+	font-size: 18px;
+	font-family: calibri;
 }
 
 .lead {
@@ -70,4 +78,6 @@
 
 .cover-heading {
 	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 40px; 
 }
+
