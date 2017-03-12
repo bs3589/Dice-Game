@@ -9,8 +9,8 @@ var rollNumber = 0, pointValue = 0, loseValues = [2, 3, 12],
     diceOneValue, diceTwoValue, rollTotal;
 
 // ********roll button********
-document.getElementById("rollButton").addEventListener("click", rollDiceButtonClicked);
 
+document.getElementById("rollButton").addEventListener("click", rollDiceButtonClicked);
 function rollDiceButtonClicked() {
   generateDiceValues();
   displayDiceRoll();
@@ -18,6 +18,82 @@ function rollDiceButtonClicked() {
   dice1Images();
   dice2Images();
 }
+
+// ******************************
+
+
+// this bounces once on first click
+document.getElementById("rollButton").addEventListener("click", diceAnimation);
+
+function diceAnimation () {
+
+
+var animationName = 'animated wobble';
+var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
+$('.diceImgs').addClass(animationName).one(animationEnd, function() {
+      $('.diceImgs').removeClass(animationName);
+    });
+// };
+
+
+$('#rollButton').addClass('animated pulse').one(animationEnd, function() {
+      $('#rollButton').removeClass('animated pulse');
+    });
+
+};
+
+
+
+
+
+// function diceAnimation () {
+// var animationName2 = 'animated bounceOutRight';
+// var animationEnd2 = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
+// $('.diceImgs').addClass(animationName2).one(animationEnd2, function() {
+//       $('.diceImgs').removeClass(animationName2);
+//     });
+
+// };
+
+
+
+
+
+
+// document.getElementById("rollButton").addEventListener("click", diceAnimation);
+
+// var animationName = 'animated bounce';
+// var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
+
+// $(function diceAnimation() {
+//   var animationName = 'animated bounce';
+//   var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+//   $('rollButton').on('click',function() {
+//     $('.diceImgs').addClass(animationName).one(animationEnd, function() {
+//       $('.diceImgs').removeClass(animationName);
+//     });
+//   });
+// });
+
+
+
+
+
+
+
+// function diceAnimation1 () {
+// $('.diceImgs').removeClass('animated bounce');
+// };
+  // function(){
+  // $(".diceImgs").removeClass('animated bounce');
+  // };
+
+
+// $(".diceImgs").removeClass('animated bounce');
+
 
 
 // ********reset button********
@@ -34,7 +110,7 @@ function resetDice() {
 }
 
 
-
+// $ ('.diceImgs').addClass('animated infinite bounce');
 
 
 function generateDiceValues() {
