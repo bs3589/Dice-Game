@@ -12,10 +12,10 @@
 	text-align: center;
 	margin:	20px auto;
 	border: 2px solid lightgrey;
-	border-radius: 40px;
+	border-radius: 50px;
 	/*text-shadow: 2px 2px grey;*/
 	/*cursor: pointer;*/
-	background-image: url("imgs/diceButtonLogo.jpg"); 
+	background-image: url("imgs/diceButtonLogoGreen2.jpg"); 
 	background-size: 100%;
     background-repeat: no-repeat;
     /*background-attachment: fixed;*/
@@ -41,12 +41,21 @@
 	font-size: 20px;
 	font-family: "Arial Black", Gadget, sans-serif;
 	color: silver;
+	text-shadow: 1px 1px grey;
+
 }
+
+/*.displayContainer {
+	background-color: blue;
+	height: 140px;
+}*/
 
 #rollMessage {
 	font-size: 30px;
 	font-family: "Arial Black", Gadget, sans-serif;
 	color: gold;
+	height: 40px;
+
 }
 
 #instructions {
@@ -54,9 +63,10 @@
 	background-color: silver;
 	border: 2px solid white;
 	color: white;
-	text-shadow: 2px 2px grey;
+	text-shadow: 2px 2px rgb(77, 79, 79);
 	font-size: 18px;
 	font-family: calibri;
+
 }
 
 .lead {
@@ -85,7 +95,24 @@
 
 
 .cover-heading {
+	color: gold;
 	font-family: "Arial Black", Gadget, sans-serif;
-	font-size: 40px; 
+	font-size: 60px; 
+	text-shadow: 2px 2px grey;
+	font-family: 'Permanent Marker', cursive;
+
+
 }
+
+.site-wrapper {
+	background-image: url("imgs/alleyWayBackground4.jpg");
+	background-repeat: no-repeat;
+	height: 100%;*/
+	/*width: 100%;*/
+	background-size: 100% 100%;
+	background-attachment: fixed;
+    background-position: center; 
+}
+
+
 
